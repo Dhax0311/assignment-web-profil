@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Web programming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="darkModeToggle" class="theme-toggle">🌙</button>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="header" class="header">
+        <img src="danilopp.jpg" alt="Profile Photo" class="profile-picture">
+        <h1>Danilo Guevara Gusmao Viana</h1>
+        <p>Web Developer | Cybersecurity Enthusiast</p>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my profile page! I am an Information Technology student passionate about web development and cybersecurity. I enjoy learning new technologies and applying them to challenging projects. I am currently studying Informatics at President University.
+            </p>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li class="highlight">Node.js & Express</li>
+                    <li>Python & Django</li>
+                    <li>SQL & MongoDB</li>
+                    <li>Network Security</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid"></div>
+                <div class="portfolio-item">
+                    <img src="Screenshot_122.png" alt="Project 1 Image">
+                    <h3>CTF</h3>
+                    <p>Participated in Capture The Flag competitions to enhance cybersecurity skills.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Screenshot_123.png" alt="Project 2 Image">
+                    <h3>This Website</h3>
+                    <p>Developed and designed this personal portfolio website using HTML, CSS.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Screenshot 2024-12-09 112550.png" alt="Project 3 Image">
+                    <h3>3D blender</h3>
+                    <p>3D modeling and animation project created using Blender.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container"></section>
+            <h2>Contact</h2>
+            <p>Feel free to contact me via email or social media.</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="#">danilo.viana@student.president.ac.id</a></li>
+                <li><strong>Phone:</strong> <a href="#">+62 000 000 000</a></li>
+                <li><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/daniloviana</a></li>
+                <li><strong>GitHub:</strong> <a href="#" target="_blank">github.com/dhax0311</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Danilo Viana</p>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            // Change moon/sun icon
+            if (body.classList.contains('dark-mode')) {
+                darkModeToggle.textContent = '☀️';
+            } else {
+                darkModeToggle.textContent = '🌙';
+            }
+        });
+    </script>
+
+</body>
+</html>
