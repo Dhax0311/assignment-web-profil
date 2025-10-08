@@ -1,1 +1,1 @@
-![Tampilan Proyek](./screenshot_122.png)
+![Tampilan Proyek](./Screenshot_122.png)
