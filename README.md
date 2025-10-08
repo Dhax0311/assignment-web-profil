@@ -2,7 +2,7 @@
 
 ![Show the Project Assignment](./web.png)
 
-
 <p>THIS IS THE OUTPUT OF WEB on DARK MODE</p>
 
-![Show the Project Assignment](./web metan.png)
+
+![Show the Project Assignment](./webmetan.png)
