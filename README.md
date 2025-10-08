@@ -1,1 +1,1 @@
-![Tampilan Proyek](./Screenshot_123.png)
+![Show the Project Assignment](./Screenshot_123.png)
